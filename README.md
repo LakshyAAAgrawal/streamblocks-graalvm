@@ -32,6 +32,12 @@ For example, To execute the ```Hello, World``` program [```language/tests/printl
 ./cal --cal.entity-qid=test.helloworld --cal.iterations=1 language/tests/println.cal
 ```
 
+### Running benchmarks
+The benchmarks present in [benchmarking/run_benchmark.sh](benchmarking/run_benchmark.sh) rely on [hyperfine](https://github.com/sharkdp/hyperfine). Follow the hyperfine repository to install hyperfine, and then execute
+```bash
+./benchmarking/run_benchmark.sh <output_file>
+```
+
 ## Introduction to the CAL Actor Language
 CAL is a high-level programming language for writing [dataflow actors](https://en.wikipedia.org/wiki/Dataflow_programming).
 
