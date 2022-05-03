@@ -130,12 +130,32 @@
             for (const entry of entries) {
               const {commit, date, tool, benches} = entry;
               for (const bench of benches) {
-                const result = { commit, date, tool, bench };
-                const arr = map.get(bench.name);
-                if (arr === undefined) {
-                  map.set(bench.name, [result]);
+                const bin_name = bench.name.substring(0, bench.name.indexOf(' '));
+                const remaining_args = bench.name.substring(bench.name.indexOf(' ') + 1);
+                const prog_results_map = map.get(remaining_args);
+                if (prog_results_map === undefined) {
+                  map.set(
+                    remaining_args,
+                    new Map([
+                      [bin_name, new Map([
+                        [commit["id"], [{commit, date, tool, bench}]]
+                      ])
+                    ]
+                  ]));
                 } else {
-                  arr.push(result);
+                  const commit_to_results = prog_results_map.get(bin_name);
+                  if (commit_to_results === undefined) {
+                    prog_results_map.set(bin_name, new Map([
+                        [commit["id"], [{commit, date, tool, bench}]]
+                    ]));
+                  } else {
+                    const results_arr = commit_to_results.get(commit["id"]);
+                    if (results_arr === undefined) {
+                      commit_to_results.set(commit["id"], [{commit, date, tool, bench}]);
+                    } else {
+                      results_arr.push({commit, date, tool, bench});
+                    }
+                  }
                 }
               }
             }
@@ -173,18 +193,19 @@
             canvas.className = 'benchmark-chart';
             parent.appendChild(canvas);
 
-            const color = toolColors[dataset.length > 0 ? dataset[0].tool : '_'];
             const data = {
-              labels: dataset.map(d => d.commit.id.slice(0, 7)),
-              datasets: [
+              datasets: Array.from(dataset.keys()).map((bin_name, index) => (
                 {
-                  label: name,
-                  data: dataset.map(d => d.bench.value),
-                  borderColor: color,
-                  backgroundColor: color + '60', // Add alpha for #rrggbbaa
+                    data : Array.from(dataset.get(bin_name).keys()).map(commitid => dataset.get(bin_name).get(commitid)[0].bench.value),
+                    borderColor: Object.values(toolColors)[index],
+                    label: bin_name,
+                    fill: false,
+                    backgroundColor: Object.values(toolColors)[index] + '60' // Add alpha for #rrggbbaa
                 }
-              ],
+              )),
+              labels: Array.from(dataset.get(Array.from(dataset.keys())[0]).keys()).map(commitid => commitid.slice(0, 7))
             };
+            console.log(dataset);
             const options = {
               scales: {
                 xAxes: [
@@ -199,7 +220,7 @@
                   {
                     scaleLabel: {
                       display: true,
-                      labelString: dataset.length > 0 ? dataset[0].bench.unit : '',
+                      labelString: dataset.size > 0 ? Array.from(Array.from(dataset.values())[0].values())[0][0].bench.unit : '',
                     },
                     ticks: {
                       beginAtZero: true,
