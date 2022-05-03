@@ -27,16 +27,6 @@ jobs:
           key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
           restore-keys: |
             ${{ runner.os }}-maven-
-#      - name: Cache Cargo binaries
-#        uses: actions/cache@v3
-#        id: cargocache
-#        with:
-#          path: |
-#            ~/.cargo/bin/
-#            ~/.cargo/registry/index/
-#            ~/.cargo/registry/cache/
-#            ~/.cargo/git/db/
-#          key: ${{ runner.os }}-cargo-
       - name: Get GraalVM Version from pom.xml
         id: getgraalversion
         run: |
@@ -56,22 +46,6 @@ jobs:
           gu install native-image
       - name: Run build
         run: mvn --batch-mode --update-snapshots verify
-      - name: Install hyperfine
-        run: |
-          cargo install hyperfine
-      - name: Perform benchmarking
-        run: |
-          sh ./benchmarking/run_benchmark.sh hyperfine_output.json
-          python3 benchmarking/convert_benchmark_result_ghaction.py hyperfine_output.json final_output.json
-      - name: Store benchmark result (Runtime)
-        uses: benchmark-action/github-action-benchmark@v1
-        with:
-          name: "Hyperfine based CAL Benchmark"
-          tool: 'customSmallerIsBetter'
-          output-file-path: './final_output.json'
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          auto-push: true
-          benchmark-data-dir-path: "dev/bench/hyperfine"
       - name: Upload calnative
         uses: actions/upload-artifact@v2.2.4
         with:
@@ -114,7 +88,7 @@ jobs:
   run_benchmarks:
     strategy:
       matrix:
-        bench_run: [1, 2, 3]
+        bench_run: [1, 2, 3, 4]
     # The type of runner that the job will run on
     concurrency: benchmarking
     needs: build_and_coverage
