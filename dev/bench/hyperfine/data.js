@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1651561250240,
+  "lastUpdate": 1651562320829,
   "repoUrl": "https://github.com/LakshyAAAgrawal/streamblocks-graalvm",
   "entries": {
     "Hyperfine based CAL Benchmark": [
@@ -240,6 +240,54 @@ window.BENCHMARK_DATA = {
             "value": 0.13917482832857142,
             "unit": "ms",
             "range": 9.262186588670623e-7
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "lakshya.aagrawal@gmail.com",
+            "name": "Lakshya A Agrawal",
+            "username": "LakshyAAAgrawal"
+          },
+          "committer": {
+            "email": "lakshya.aagrawal@gmail.com",
+            "name": "Lakshya A Agrawal",
+            "username": "LakshyAAAgrawal"
+          },
+          "distinct": true,
+          "id": "8907a2efbe3cc36a9276929dd1e4829561d0c7ce",
+          "message": "Add more cache directories for cargo cache in master-push GHAction",
+          "timestamp": "2022-05-03T12:33:23+05:30",
+          "tree_id": "315ad701276d1a196b8c4c1b5a068e39414b68f7",
+          "url": "https://github.com/LakshyAAAgrawal/streamblocks-graalvm/commit/8907a2efbe3cc36a9276929dd1e4829561d0c7ce"
+        },
+        "date": 1651562319994,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "./cal --cal.entity-qid=jpeg.SingleImagePrinter --cal.directory-lookup=true language/tests/jpeg/SingleImageTest.cal",
+            "value": 13.426080458620001,
+            "unit": "ms",
+            "range": 0.27037430867091716
+          },
+          {
+            "name": "./native/calnative --cal.entity-qid=jpeg.SingleImagePrinter --cal.directory-lookup=true language/tests/jpeg/SingleImageTest.cal",
+            "value": 17.057106455419994,
+            "unit": "ms",
+            "range": 0.03572987621630554
+          },
+          {
+            "name": "./cal --cal.entity-qid=mdp.TopFibonacci --cal.directory-lookup=true language/tests/mdp/src/TopFibonacci.cal",
+            "value": 1.8441337967200002,
+            "unit": "ms",
+            "range": 0.001955536792874153
+          },
+          {
+            "name": "./native/calnative --cal.entity-qid=mdp.TopFibonacci --cal.directory-lookup=true language/tests/mdp/src/TopFibonacci.cal",
+            "value": 0.17446358480235297,
+            "unit": "ms",
+            "range": 0.00001974596576042873
           }
         ]
       }
