@@ -12,7 +12,7 @@ if __name__ == "__main__":
         {
           "name": result["command"],
           "value": result["mean"],
-          "unit": "ms",
+          "unit": "s",
           "range": result["stddev"]**2,
         }
         for result in inp["results"]
