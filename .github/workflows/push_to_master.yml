@@ -31,7 +31,11 @@ jobs:
         uses: actions/cache@v3
         id: cargocache
         with:
-          path: ~/.cargo/bin/
+          path: |
+            ~/.cargo/bin/
+            ~/.cargo/registry/index/
+            ~/.cargo/registry/cache/
+            ~/.cargo/git/db/
           key: ${{ runner.os }}-cargo-
       - name: Get GraalVM Version from pom.xml
         id: getgraalversion
