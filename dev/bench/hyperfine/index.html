@@ -192,11 +192,21 @@
             const canvas = document.createElement('canvas');
             canvas.className = 'benchmark-chart';
             parent.appendChild(canvas);
-
+            function arrayAverage(arr){
+                //Find the sum
+                var sum = 0;
+                for(var i in arr) {
+                    sum += arr[i];
+                }
+                //Get the length of the array
+                var numbersCnt = arr.length;
+                //Return the average / mean.
+                return (sum / numbersCnt);
+            }
             const data = {
               datasets: Array.from(dataset.keys()).map((bin_name, index) => (
                 {
-                    data : Array.from(dataset.get(bin_name).keys()).map(commitid => dataset.get(bin_name).get(commitid)[0].bench.value),
+                    data : Array.from(dataset.get(bin_name).keys()).map(commitid => arrayAverage(dataset.get(bin_name).get(commitid).map(x => x.bench.value))),
                     borderColor: Object.values(toolColors)[index],
                     label: bin_name,
                     fill: false,
@@ -205,7 +215,6 @@
               )),
               labels: Array.from(dataset.get(Array.from(dataset.keys())[0]).keys()).map(commitid => commitid.slice(0, 7))
             };
-            console.log(dataset);
             const options = {
               scales: {
                 xAxes: [
