@@ -28,25 +28,25 @@ window.BENCHMARK_DATA = {
           {
             "name": "./cal --cal.entity-qid=jpeg.SingleImagePrinter --cal.directory-lookup=true language/tests/jpeg/SingleImageTest.cal",
             "value": 10.93188011912,
-            "unit": "ms",
+            "unit": "s",
             "range": 0.08112036551219308
           },
           {
             "name": "./native/calnative --cal.entity-qid=jpeg.SingleImagePrinter --cal.directory-lookup=true language/tests/jpeg/SingleImageTest.cal",
             "value": 14.15275231942,
-            "unit": "ms",
+            "unit": "s",
             "range": 0.001806301338520523
           },
           {
             "name": "./cal --cal.entity-qid=mdp.TopFibonacci --cal.directory-lookup=true language/tests/mdp/src/TopFibonacci.cal",
             "value": 1.4369879035200002,
-            "unit": "ms",
+            "unit": "s",
             "range": 0.0014918249270822524
           },
           {
             "name": "./native/calnative --cal.entity-qid=mdp.TopFibonacci --cal.directory-lookup=true language/tests/mdp/src/TopFibonacci.cal",
             "value": 0.1379877973438095,
-            "unit": "ms",
+            "unit": "s",
             "range": 0.0000011302400022092689
           }
         ]
@@ -76,25 +76,25 @@ window.BENCHMARK_DATA = {
           {
             "name": "./cal --cal.entity-qid=jpeg.SingleImagePrinter --cal.directory-lookup=true language/tests/jpeg/SingleImageTest.cal",
             "value": 13.402195477640001,
-            "unit": "ms",
+            "unit": "s",
             "range": 0.22184463766716703
           },
           {
             "name": "./native/calnative --cal.entity-qid=jpeg.SingleImagePrinter --cal.directory-lookup=true language/tests/jpeg/SingleImageTest.cal",
             "value": 16.537520436940003,
-            "unit": "ms",
+            "unit": "s",
             "range": 0.010130471736601344
           },
           {
             "name": "./cal --cal.entity-qid=mdp.TopFibonacci --cal.directory-lookup=true language/tests/mdp/src/TopFibonacci.cal",
             "value": 1.8108617597399999,
-            "unit": "ms",
+            "unit": "s",
             "range": 0.004306624216526919
           },
           {
             "name": "./native/calnative --cal.entity-qid=mdp.TopFibonacci --cal.directory-lookup=true language/tests/mdp/src/TopFibonacci.cal",
             "value": 0.178278065565,
-            "unit": "ms",
+            "unit": "s",
             "range": 0.0003200477467468872
           }
         ]
@@ -124,25 +124,25 @@ window.BENCHMARK_DATA = {
           {
             "name": "./cal --cal.entity-qid=jpeg.SingleImagePrinter --cal.directory-lookup=true language/tests/jpeg/SingleImageTest.cal",
             "value": 11.06965709382,
-            "unit": "ms",
+            "unit": "s",
             "range": 0.07452004376017322
           },
           {
             "name": "./native/calnative --cal.entity-qid=jpeg.SingleImagePrinter --cal.directory-lookup=true language/tests/jpeg/SingleImageTest.cal",
             "value": 14.11526222942,
-            "unit": "ms",
+            "unit": "s",
             "range": 0.010067290806112579
           },
           {
             "name": "./cal --cal.entity-qid=mdp.TopFibonacci --cal.directory-lookup=true language/tests/mdp/src/TopFibonacci.cal",
             "value": 1.45715418292,
-            "unit": "ms",
+            "unit": "s",
             "range": 0.002457091773221963
           },
           {
             "name": "./native/calnative --cal.entity-qid=mdp.TopFibonacci --cal.directory-lookup=true language/tests/mdp/src/TopFibonacci.cal",
             "value": 0.13935901785809526,
-            "unit": "ms",
+            "unit": "s",
             "range": 0.0000011000790474134927
           }
         ]
@@ -172,25 +172,25 @@ window.BENCHMARK_DATA = {
           {
             "name": "./cal --cal.entity-qid=jpeg.SingleImagePrinter --cal.directory-lookup=true language/tests/jpeg/SingleImageTest.cal",
             "value": 10.849646450800002,
-            "unit": "ms",
+            "unit": "s",
             "range": 0.02807009837603012
           },
           {
             "name": "./native/calnative --cal.entity-qid=jpeg.SingleImagePrinter --cal.directory-lookup=true language/tests/jpeg/SingleImageTest.cal",
             "value": 13.7929805942,
-            "unit": "ms",
+            "unit": "s",
             "range": 0.004678693990764908
           },
           {
             "name": "./cal --cal.entity-qid=mdp.TopFibonacci --cal.directory-lookup=true language/tests/mdp/src/TopFibonacci.cal",
             "value": 1.436259961,
-            "unit": "ms",
+            "unit": "s",
             "range": 0.0010059546118617617
           },
           {
             "name": "./native/calnative --cal.entity-qid=mdp.TopFibonacci --cal.directory-lookup=true language/tests/mdp/src/TopFibonacci.cal",
             "value": 0.1249720505130435,
-            "unit": "ms",
+            "unit": "s",
             "range": 3.123881789484369e-7
           }
         ]
@@ -220,25 +220,25 @@ window.BENCHMARK_DATA = {
           {
             "name": "./cal --cal.entity-qid=jpeg.SingleImagePrinter --cal.directory-lookup=true language/tests/jpeg/SingleImageTest.cal",
             "value": 11.122851852600002,
-            "unit": "ms",
+            "unit": "s",
             "range": 0.02513302670844096
           },
           {
             "name": "./native/calnative --cal.entity-qid=jpeg.SingleImagePrinter --cal.directory-lookup=true language/tests/jpeg/SingleImageTest.cal",
             "value": 14.5113031726,
-            "unit": "ms",
+            "unit": "s",
             "range": 0.0031067004025435766
           },
           {
             "name": "./cal --cal.entity-qid=mdp.TopFibonacci --cal.directory-lookup=true language/tests/mdp/src/TopFibonacci.cal",
             "value": 1.4542094852999998,
-            "unit": "ms",
+            "unit": "s",
             "range": 0.004842385226020836
           },
           {
             "name": "./native/calnative --cal.entity-qid=mdp.TopFibonacci --cal.directory-lookup=true language/tests/mdp/src/TopFibonacci.cal",
             "value": 0.13917482832857142,
-            "unit": "ms",
+            "unit": "s",
             "range": 9.262186588670623e-7
           }
         ]
@@ -268,25 +268,25 @@ window.BENCHMARK_DATA = {
           {
             "name": "./cal --cal.entity-qid=jpeg.SingleImagePrinter --cal.directory-lookup=true language/tests/jpeg/SingleImageTest.cal",
             "value": 13.426080458620001,
-            "unit": "ms",
+            "unit": "s",
             "range": 0.27037430867091716
           },
           {
             "name": "./native/calnative --cal.entity-qid=jpeg.SingleImagePrinter --cal.directory-lookup=true language/tests/jpeg/SingleImageTest.cal",
             "value": 17.057106455419994,
-            "unit": "ms",
+            "unit": "s",
             "range": 0.03572987621630554
           },
           {
             "name": "./cal --cal.entity-qid=mdp.TopFibonacci --cal.directory-lookup=true language/tests/mdp/src/TopFibonacci.cal",
             "value": 1.8441337967200002,
-            "unit": "ms",
+            "unit": "s",
             "range": 0.001955536792874153
           },
           {
             "name": "./native/calnative --cal.entity-qid=mdp.TopFibonacci --cal.directory-lookup=true language/tests/mdp/src/TopFibonacci.cal",
             "value": 0.17446358480235297,
-            "unit": "ms",
+            "unit": "s",
             "range": 0.00001974596576042873
           }
         ]
@@ -316,25 +316,25 @@ window.BENCHMARK_DATA = {
           {
             "name": "./cal --cal.entity-qid=jpeg.SingleImagePrinter --cal.directory-lookup=true language/tests/jpeg/SingleImageTest.cal",
             "value": 10.98705470922,
-            "unit": "ms",
+            "unit": "s",
             "range": 0.11530646340223889
           },
           {
             "name": "./native/calnative --cal.entity-qid=jpeg.SingleImagePrinter --cal.directory-lookup=true language/tests/jpeg/SingleImageTest.cal",
             "value": 14.406557595719999,
-            "unit": "ms",
+            "unit": "s",
             "range": 0.005266657168547849
           },
           {
             "name": "./cal --cal.entity-qid=mdp.TopFibonacci --cal.directory-lookup=true language/tests/mdp/src/TopFibonacci.cal",
             "value": 1.4284338190200003,
-            "unit": "ms",
+            "unit": "s",
             "range": 0.0014055254096372826
           },
           {
             "name": "./native/calnative --cal.entity-qid=mdp.TopFibonacci --cal.directory-lookup=true language/tests/mdp/src/TopFibonacci.cal",
             "value": 0.13728158339142857,
-            "unit": "ms",
+            "unit": "s",
             "range": 0.0000024419145486211578
           }
         ]
@@ -364,25 +364,25 @@ window.BENCHMARK_DATA = {
           {
             "name": "./cal --cal.entity-qid=jpeg.SingleImagePrinter --cal.directory-lookup=true language/tests/jpeg/SingleImageTest.cal",
             "value": 10.9068130692,
-            "unit": "ms",
+            "unit": "s",
             "range": 0.03464141606194159
           },
           {
             "name": "./native/calnative --cal.entity-qid=jpeg.SingleImagePrinter --cal.directory-lookup=true language/tests/jpeg/SingleImageTest.cal",
             "value": 14.076694360400001,
-            "unit": "ms",
+            "unit": "s",
             "range": 0.02633709474847789
           },
           {
             "name": "./cal --cal.entity-qid=mdp.TopFibonacci --cal.directory-lookup=true language/tests/mdp/src/TopFibonacci.cal",
             "value": 1.4268622636,
-            "unit": "ms",
+            "unit": "s",
             "range": 0.0022239481371971615
           },
           {
             "name": "./native/calnative --cal.entity-qid=mdp.TopFibonacci --cal.directory-lookup=true language/tests/mdp/src/TopFibonacci.cal",
             "value": 0.12636084214347829,
-            "unit": "ms",
+            "unit": "s",
             "range": 0.0000019777794681754955
           }
         ]
@@ -412,25 +412,25 @@ window.BENCHMARK_DATA = {
           {
             "name": "./cal --cal.entity-qid=jpeg.SingleImagePrinter --cal.directory-lookup=true language/tests/jpeg/SingleImageTest.cal",
             "value": 14.603156485220001,
-            "unit": "ms",
+            "unit": "s",
             "range": 0.12556891518965346
           },
           {
             "name": "./native/calnative --cal.entity-qid=jpeg.SingleImagePrinter --cal.directory-lookup=true language/tests/jpeg/SingleImageTest.cal",
             "value": 18.448647493520003,
-            "unit": "ms",
+            "unit": "s",
             "range": 0.14667771720485212
           },
           {
             "name": "./cal --cal.entity-qid=mdp.TopFibonacci --cal.directory-lookup=true language/tests/mdp/src/TopFibonacci.cal",
             "value": 1.8184857486200001,
-            "unit": "ms",
+            "unit": "s",
             "range": 0.0015507896841833984
           },
           {
             "name": "./native/calnative --cal.entity-qid=mdp.TopFibonacci --cal.directory-lookup=true language/tests/mdp/src/TopFibonacci.cal",
             "value": 0.17335862197294122,
-            "unit": "ms",
+            "unit": "s",
             "range": 0.00003835026475570999
           }
         ]
@@ -460,25 +460,25 @@ window.BENCHMARK_DATA = {
           {
             "name": "./cal --cal.entity-qid=jpeg.SingleImagePrinter --cal.directory-lookup=true language/tests/jpeg/SingleImageTest.cal",
             "value": 12.48148832596,
-            "unit": "ms",
+            "unit": "s",
             "range": 0.18279550836775518
           },
           {
             "name": "./native/calnative --cal.entity-qid=jpeg.SingleImagePrinter --cal.directory-lookup=true language/tests/jpeg/SingleImageTest.cal",
             "value": 15.50984182956,
-            "unit": "ms",
+            "unit": "s",
             "range": 0.09511142859337163
           },
           {
             "name": "./cal --cal.entity-qid=mdp.TopFibonacci --cal.directory-lookup=true language/tests/mdp/src/TopFibonacci.cal",
             "value": 1.6255332287599997,
-            "unit": "ms",
+            "unit": "s",
             "range": 0.0024513171107169345
           },
           {
             "name": "./native/calnative --cal.entity-qid=mdp.TopFibonacci --cal.directory-lookup=true language/tests/mdp/src/TopFibonacci.cal",
             "value": 0.1532392127126316,
-            "unit": "ms",
+            "unit": "s",
             "range": 0.000019381354410193846
           }
         ]
