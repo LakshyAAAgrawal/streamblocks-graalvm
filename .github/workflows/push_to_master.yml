@@ -27,6 +27,12 @@ jobs:
           key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
           restore-keys: |
             ${{ runner.os }}-maven-
+      - name: Cache Cargo binaries
+        uses: actions/cache@v3
+        id: cargocache
+        with:
+          path: ~/.cargo/bin/
+          key: ${{ runner.os }}-cargo-
       - name: Get GraalVM Version from pom.xml
         id: getgraalversion
         run: |
