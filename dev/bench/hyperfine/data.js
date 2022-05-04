@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1651698307299,
+  "lastUpdate": 1651698344784,
   "repoUrl": "https://github.com/LakshyAAAgrawal/streamblocks-graalvm",
   "entries": {
     "Hyperfine based CAL Benchmark": [
@@ -2688,6 +2688,54 @@ window.BENCHMARK_DATA = {
             "value": 0.13034673443818184,
             "unit": "s",
             "range": 0.0000388450261773672
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "lakshya18242@iiitd.ac.in",
+            "name": "Lakshya A Agrawal",
+            "username": "LakshyAAAgrawal"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "aa65cb340bb9bb315439320ec172bb88a2e9fcd3",
+          "message": "Update test-benchmarking",
+          "timestamp": "2022-05-05T02:18:20+05:30",
+          "tree_id": "288ff76863223ef625b4a2c7f1ddea56577297ec",
+          "url": "https://github.com/LakshyAAAgrawal/streamblocks-graalvm/commit/aa65cb340bb9bb315439320ec172bb88a2e9fcd3"
+        },
+        "date": 1651698343613,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "./cal --cal.entity-qid=jpeg.SingleImagePrinter --cal.directory-lookup=true language/tests/jpeg/SingleImageTest.cal",
+            "value": 11.0667156334,
+            "unit": "s",
+            "range": 0.19704664442228864
+          },
+          {
+            "name": "./native/calnative --cal.entity-qid=jpeg.SingleImagePrinter --cal.directory-lookup=true language/tests/jpeg/SingleImageTest.cal",
+            "value": 14.528696843,
+            "unit": "s",
+            "range": 0.0005014526072392216
+          },
+          {
+            "name": "./cal --cal.entity-qid=mdp.TopFibonacci --cal.directory-lookup=true language/tests/mdp/src/TopFibonacci.cal",
+            "value": 1.4619116942,
+            "unit": "s",
+            "range": 0.0024545154149492876
+          },
+          {
+            "name": "./native/calnative --cal.entity-qid=mdp.TopFibonacci --cal.directory-lookup=true language/tests/mdp/src/TopFibonacci.cal",
+            "value": 0.1420669274285714,
+            "unit": "s",
+            "range": 0.0000013834071272938513
           }
         ]
       }
